@@ -1,0 +1,48 @@
+Ruby:
+* Object-oriented programming language
+* Created in 1995 by Yukihiro Matsumoto ("Matz")
+* Used for many purposes, not only web applications
+* Ruby Essential Training
+-------
+* Object oriented
+* Easily readable
+* Unsurprising syntax and behavior
+--------
+Ruby on Rails:
+* Open-source web application framework
+* Written in Ruby
+* Created in 2003 by David Heinemeier Hansson ("DHH")
+* Foundation of Basecamp (https://basecamp.com)
+* Released as open source in 2004
+--------
+* Version 5: released July 2016
+* Mostly new features and improvements
+* Few breaking changes
+* Ruby on Rails 5 New Features
+---------
+Framework:
+A set of code libraries and data-structures that provide generic functionality that can be used, overridden, or further specialized
+---------
+DRY Code:
+* "Don't repeat yourself" (DRY)
+* Concise, consistent code that is easy to maintain
+* built DRY and encourages DRY
+----------
+Convention over Configuration:
+* Sensible defaults; only specify unconventional aspects
+* Speeds development; less code to maintain
+* Follows best practices (opinionated!)
+* Extra features for free
+--------
+Who should use Ruby on Rails?
+* Previous web experience preferred
+* Build sites that interact with databases
+* Tired of recreating site functionality from scratch
+* Concerned with best practices, standards, and security
+--------
+Recommended Skills:
+* Web basics (brwsers, servers, and pages)
+* HTML
+* SQL and relational databases
+* CSS and JavaScript
+* Ruby

@@ -1,0 +1,10 @@
+In order to work on Ruby on Rails we have to install the following software:
+
+- Ruby
+- RubyGems
+- Ruby on Rails
+- MySQL
+
+To follow the exercise file of Lynda.com follow the steps below:
+cd simple_cms
+rails otl:import
