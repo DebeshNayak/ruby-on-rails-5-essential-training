@@ -1,0 +1,24 @@
+Model
+View
+Controller
+--------------------
+Basic Web Architecture:
+
+------------            -----------           -------------
+| Browser  | <------->  |  Page   | <-------> | Database  |
+------------            -----------           -------------
+
+---------
+MVC Web Architecture:
+
+------------            ------------- Handles decisions
+| Browser  | <------->  |Controller |
+------------            ------------- ActionController (ActionPack)
+          \              /        \
+           \            /          \
+            ------------            -----------           -------------
+            |  View    | <------->  |  Model   | <-------> | Database  |
+            ------------            -----------           -------------
+            Handles (ActionView)     Handles (ActiveRecord)
+            presentation(ActionPack) data
+---------

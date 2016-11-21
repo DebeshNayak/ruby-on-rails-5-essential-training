@@ -21,12 +21,12 @@ Ruby on Rails:
 * Ruby on Rails 5 New Features
 ---------
 Framework:
-A set of code libraries and data-structures that provide generic functionality that can be used, overridden, or further specialized
+A set of code libraries and data-structures that provide generic functionality that can be used, overridden, or further specialized.
 ---------
 DRY Code:
 * "Don't repeat yourself" (DRY)
 * Concise, consistent code that is easy to maintain
-* built DRY and encourages DRY
+* Built DRY and encourages DRY
 ----------
 Convention over Configuration:
 * Sensible defaults; only specify unconventional aspects
