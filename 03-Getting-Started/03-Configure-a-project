@@ -2,7 +2,9 @@
 bundle install
 
 2. config/application.rb
+
 -----------
+
 In MySQL -> root user do the following:
 
 CREATE DATABASE simple_cms_development;
