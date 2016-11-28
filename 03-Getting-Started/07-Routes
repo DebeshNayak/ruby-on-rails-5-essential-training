@@ -1,0 +1,21 @@
+Routes:
+
+Route Types:
+* Simple route
+
+short version: get "demo/index"
+long version: match "demo/index", :to => "demo#index", :via => :get
+
+* Default route:
+Structure:
+:controller/:action/:id
+
+GET/students/edit/52
+StudentsController, edit action, id = 52
+
+get ':controller(/:action(/:id))'
+
+* Root route
+* Resourceful routes
+
+Example:

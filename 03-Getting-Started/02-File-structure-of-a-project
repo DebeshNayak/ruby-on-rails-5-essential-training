@@ -1,0 +1,30 @@
+Quick changes to the text editor:
+1. Remove the helpful tips:
+  File -> Setting -> search for "back" -> Disable the "background tips"
+2. Sorted to the left side project explorer in alphabetical order
+  File -> Setting -> search for "tree" -> Tree View -> Settings -> Disable the "Sort Folders Before Files" option
+1. app directory
+  - model
+  - view
+  - controller
+  - helpers (view helper)
+  - assets (javascript, style sheet, images)
+  - mailers (for emails)
+  - jobs (something going to do every mid night)
+  - channels (all action cabel code will be inside it)
+
+2. config
+
+3. db (database migration file)
+
+4. Gemfile
+
+5. log
+
+6. public
+
+7. test (test code using RSpec)
+
+8. lib (own reusable code)
+
+9. vendor (3rd party code)

@@ -1,0 +1,70 @@
+How to install ruby on Windows:
+i. Intall Ruby
+	1. Go to https://rubyinstaller.org
+	2. Download the ruby 2.3.1(x64)
+---------------------------
+ii. Install DevKit
+	1. Then check that the ruby version support which Development Kit version.
+
+	2. Go to the Development Kit section and download that development kit.
+(Reference: https://github.com/oneclick/rubyinstaller/wiki/development-kit)
+
+	3. Install the Devleopment kit into C:\DevKit
+	4. Go to command prompt and run the following command:
+cd /DevKit
+ruby dk.rb init
+(it generate config.yml file)
+
+ruby dk.rb install
+(install the devkit for ruby)
+
+gem install json --platform=ruby
+(testing installation)
+
+ruby -rubygems -e "require 'json'; puts JSON.load('[42]').inspect"
+(to confirm that the json gem is working)
+
+------------------------------------------------------------------------
+Issue during DevKit Installation:
+---------------------------------
+Issue: After DevKit installation, I checked whether it is working or not by executing the following command:
+
+gem install json --platform=ruby
+
+But I got the error:
+ERROR:  Could not find a valid gem 'json' (>= 0), here is why:
+          Unable to download data from https://rubygems.org/ - SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed (https://api.rubygems.org/specs.4.8.gz)
+
+Cause: this is happening is because rubygems.org updated their SSL certificate and older versions don't have the updated certificate bundled.
+
+Solution:
+1. Find download links at GitHub under: https://github.com/rubygems/rubygems/releases
+
+2. Download the latest version of gem from following link:
+https://rubygems.org/downloads/rubygems-update-X.Y.Z.gem
+
+Here: X, Y, Z are the gem version no.
+
+3. Copy the gem file to C:/ root folder.
+
+4. Install the new rubygem using the following command in the command prompt:
+gem install --local C:\rubygems-update-1.8.30.gem
+update_rubygems --no-ri --no-rdoc
+
+Refernece: https://gist.github.com/luislavena/f064211759ee0f806c88
+------------
+iii. Installing RubyGems:
+It is a Ruby Package manager.
+  1. gem -v
+  2. gem list
+  3. gem update --system
+  4. gem --help
+-------------
+iv. Install Rails:
+  1. gem list
+  2. gem install rails
+  3. gem install rails --version 5.0.0.1 --no-ri --no-rdoc
+  4. rails -v
+-------------
+iv. Installing MySQL:
+gem install mysql2 --no-rdoc -no-ri

@@ -1,0 +1,29 @@
+1. If we change the "Gemfile", then we need to run the following command in the project home directory again:
+bundle install
+
+2. config/application.rb
+-----------
+In MySQL -> root user do the following:
+
+CREATE DATABASE simple_cms_development;
+
+CREATE DATABASE simple_cms_test;
+
+for production:
+CREATE DATABASE simple_cms_production; (only for production not for development)
+-------------
+Don't use root user for the application, instead create root user:
+
+So create a new user:
+GRANT ALL PRIVILEGES ON simple_cms_development.* TO 'rails_user'@'%' IDENTIFIED BY 'secretepassword';
+
+GRANT ALL PRIVILEGES ON simple_cms_development.* TO 'rails_user'@'localhost' IDENTIFIED BY 'secretepassword'; (if doing development from localhost)
+
+GRANT ALL PRIVILEGES ON simple_cms_test.* TO 'rails_user'@'%' IDENTIFIED BY 'secretepassword';
+
+GRANT ALL PRIVILEGES ON simple_cms_test.* TO 'rails_user'@'localhost' IDENTIFIED BY 'secretepassword'; (if doing development from localhost)
+
+---------------
+Configure the database.yml file
+
+rails db:schema:dump

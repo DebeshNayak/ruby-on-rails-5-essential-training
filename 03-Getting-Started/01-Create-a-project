@@ -1,0 +1,24 @@
+Installation:
+* Installing and Running Ruby on Rails 5: Mac
+* installing and Running Ruby on Rails 5: Windows
+------------
+Built-in Database Support
+* SQLite (default)
+* MySQL
+* PostgreSQL
+------------
+Software Used:
+* Database: MySQL
+* Browser: Firefox
+* Text editor: Atom
+-------------------
+cd /media/sf_ruby-virtual-host-shared
+
+rails new <name-of-app>
+rails new simple_cms -d mysql
+
+
+Reference:
+Sort the "ls" command output
+
+atom .

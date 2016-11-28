@@ -1,0 +1,12 @@
+Access a Project:
+* Start web server
+rails server
+rails s
+Boot up the Puma web server
+
+* Stop web server
+  control + c
+
+* Visit site in a browser
+  http://localhost:3000
+  http://127.0.0.1:3000

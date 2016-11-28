@@ -1,0 +1,20 @@
+Server Request Handling:
+-----------------------
+Rails Architecture:
+
+------------         --------------           ------------          ---------------------------
+|  Browser | <------>| Web Server | <-------> | Public   | -------> |     Rails Framework     |
+------------         --------------           ------------          |         ---------       |
+                          ^                                         |        | Routing |      |
+                           \                                        |         ---------       |
+                            \                                       |             |           |
+                             \                                      |        ------------     |
+                              \                                     |       | Controller |    |
+                               \                                    |        ------------     |
+                                \__________________________________ |        /       \        |
+                                                                    |\  ------      -------   |
+                                                                    | \| View |    | Model |  |
+                                                                    |   ------      -------   |
+                                                                    ---------------------------
+So, Rails first check if the requested file is available in the "Public" directory,
+Then it checks the route and further send the request to controller.
