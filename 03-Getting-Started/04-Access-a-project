@@ -5,7 +5,7 @@ rails s
 Boot up the Puma web server
 
 * Stop web server
-  control + c
+control + c
 
 * Visit site in a browser
   http://localhost:3000

@@ -16,5 +16,9 @@ Rails Architecture:
                                                                     | \| View |    | Model |  |
                                                                     |   ------      -------   |
                                                                     ---------------------------
+
+1. How the routing play in this picture.
+2. In production we need to configure the "document root"
+
 So, Rails first check if the requested file is available in the "Public" directory,
 Then it checks the route and further send the request to controller.
