@@ -1,0 +1,11 @@
+Experiment on Your Own:
+* Generate a new controller
+  ExampleController, TextController
+* Add several actions to the controller
+* Edit the related templates
+* Use a browser to locate each page
+--------------
+Experiment with different routes
+* Simple match route
+* Default route
+* Match a crazy string to a controller and action

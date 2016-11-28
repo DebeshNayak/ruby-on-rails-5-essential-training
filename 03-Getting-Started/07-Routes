@@ -1,21 +1,34 @@
 Routes:
 
 Route Types:
-* Simple route
+1. Simple route:
+---------------
+short version:
+get "demo/index"
 
-short version: get "demo/index"
-long version: match "demo/index", :to => "demo#index", :via => :get
+long version:
+match "demo/index", :to => "demo#index", :via => :get
 
-* Default route:
+2. Default route: (in the old age of rails it )
+----------------
 Structure:
 :controller/:action/:id
 
 GET/students/edit/52
+
 StudentsController, edit action, id = 52
 
 get ':controller(/:action(/:id))'
 
-* Root route
-* Resourceful routes
+match ':controller(/:action(/:id))', :via => :get
 
-Example:
+3. Root route: (what happen when there is nothing to match at all)
+--------------
+Long form:
+match "/", :to => "demo#index", :via => :get
+
+Short form:
+root "demo#index"
+
+4. Resourceful routes:
+---------------------
