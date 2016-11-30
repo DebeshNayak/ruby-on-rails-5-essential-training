@@ -1,0 +1,7 @@
+* How template are render?
+
+Render Template Syntax:
+render(:template => 'demo/hello')
+
+Short hand form:
+render('demo/hello')
